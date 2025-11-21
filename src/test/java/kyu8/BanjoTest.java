@@ -1,4 +1,4 @@
-package de.dennis.codewars.kyu8;
+package kyu8;
 
 import kyu8.Banjo;
 import org.junit.jupiter.api.Assertions;
