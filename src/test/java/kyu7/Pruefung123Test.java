@@ -12,7 +12,11 @@ public class Pruefung123Test {
     }
     @Test
     public void basicTestsBuchstaben() {
-    Assertions.assertEquals(Arrays.asList("1:a ", "2:b ", "3:c ", "4:d ", "5:e "),Pruefung123.LineNumbering(Arrays.asList("a", "b", "c", "d", "e")));
+    Assertions.assertEquals(Arrays.asList("1: a", "2: b", "3: c", "4: d", "5: e"),Pruefung123.LineNumbering(Arrays.asList("a", "b", "c", "d", "e")));
+    }
+    @Test
+    public void basicTestsEmpty() {
+    Assertions.assertEquals(Arrays.asList(),Pruefung123.LineNumbering(Arrays.asList()));
     }
 
 
