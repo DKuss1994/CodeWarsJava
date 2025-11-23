@@ -1,4 +1,4 @@
-package kyu7;
+package kyu7.Pruefung123;
 
 import java.util.ArrayList;
 import java.util.List;
