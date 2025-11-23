@@ -1,4 +1,4 @@
-package kyu8;
+package kyu8.Banjo;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

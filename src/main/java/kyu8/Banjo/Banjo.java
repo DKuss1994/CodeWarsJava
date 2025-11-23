@@ -1,4 +1,4 @@
-package kyu8;
+package kyu8.Banjo;
 
 /*# Are You Playing Banjo? (8 kyu)
 
