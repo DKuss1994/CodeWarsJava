@@ -10,4 +10,8 @@ public class TwiceAsOldTest {
     public void TestCase1(){
         Assertions.assertEquals(twiceAsOld(30,0),30);
     }
+    @Test
+    public void TestCase2(){
+        Assertions.assertEquals(twiceAsOld(30,0),30);
+    }
 }
