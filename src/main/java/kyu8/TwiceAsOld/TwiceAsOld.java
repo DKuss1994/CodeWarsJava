@@ -1,7 +1,7 @@
 package kyu8.TwiceAsOld;
 /*# Twice as old (8 kyu)
 
-# https://www.codewars.com/kata/5b853229cfde412a470000d0/java
+# https://www.codewars.com/kata/5b853229cfde412a470000d0/train/java
         # Sprache: Java
 # Datum: 2025-11-21
 
