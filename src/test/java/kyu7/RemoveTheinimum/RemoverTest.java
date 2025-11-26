@@ -7,11 +7,19 @@ import static kyu7.RemoveTheinimum.Remover.removeSmallest;
 
 public class RemoverTest {
 
-    int [] testNumbers1 = {1,2,2,3};
 
-    int [] testCase1 = {2,2,3};
     @Test
     public void TestCase1(){
-        Assertions.assertEquals(removeSmallest(testNumbers1),testCase1);
+        int [] testNumbers1 = {1,2,2,3};
+
+        int [] testCase1 = {2,2,3};
+        Assertions.assertArrayEquals(removeSmallest(testNumbers1),testCase1);
+    }
+    @Test
+    public void TestCase2(){
+        int [] testNumbers1 = {5,2,2,3};
+
+        int [] testCase1 = {5,2,3};
+        Assertions.assertArrayEquals(removeSmallest(testNumbers1),testCase1);
     }
 }
