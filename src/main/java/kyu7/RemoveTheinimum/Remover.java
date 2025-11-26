@@ -1,8 +1,34 @@
 package kyu7.RemoveTheinimum;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+/*# Das Museum der unglaublich langweiligen Dinge (7 kyu)
+
+# https://www.codewars.com/kata/563cf89eb4747c5fb100001b/train/java
+        # Sprache: Java
+# Datum: 2025-11-26
+
+        # Aufgabe:
+        # Das Museum der unglaublich langweiligen Dinge möchte einige Exponate entfernen.
+        # Jedes Exponat bekommt eine Bewertung. Anschließend soll das Exponat mit der
+        # niedrigsten Bewertung entfernt werden.
+        #
+        # Schreibe eine Funktion, die aus einer Liste von Ganzzahlen den kleinsten Wert entfernt.
+        #
+        # Bedingungen:
+        # - Verändere das ursprüngliche Array nicht.
+        # - Wenn mehrere Elemente denselben kleinsten Wert haben, entferne das mit dem
+        #   niedrigsten Index.
+        # - Wenn die Liste leer ist, gib eine leere Liste zurück.
+        # - Die Reihenfolge der übrigen Elemente bleibt unverändert.
+
+        # Beispiele:
+        # [1,2,3,4,5] -> [2,3,4,5]
+        # [5,3,2,1,4] -> [5,3,2,4]
+        # [2,2,1,2,1] -> [2,2,2,1]
+
+# Ich hab gelernt, wie man den kleinsten Wert in einer Liste findet,
+# wie man ihn nur einmal anhand des Index entfernt
+# und wie man dabei das Original nicht verändert.
+*/
 
 public class Remover {
     public static int[] removeSmallest(int[] numbers) {
