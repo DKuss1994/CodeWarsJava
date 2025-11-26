@@ -6,6 +6,11 @@ import java.util.List;
 
 public class Remover {
     public static int[] removeSmallest(int[] numbers) {
+        if(numbers == null){
+            return numbers;
+        } else if (numbers.length == 0) {
+            return numbers;
+        }
 
         int count = 0;
         int x = 0;

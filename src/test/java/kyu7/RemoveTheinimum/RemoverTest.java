@@ -22,4 +22,11 @@ public class RemoverTest {
         int [] testCase1 = {5,2,3};
         Assertions.assertArrayEquals(removeSmallest(testNumbers1),testCase1);
     }
+    @Test
+    public void TestCase3(){
+        int [] testNumbers1 = {};
+
+        int [] testCase1 = {};
+        Assertions.assertArrayEquals(removeSmallest(testNumbers1),testCase1);
+    }
 }
