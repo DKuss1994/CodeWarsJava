@@ -10,4 +10,9 @@ public class PrinterTest {
         String druckerAusgabe = "abcdefgh";
         Assertions.assertEquals(printerError(druckerAusgabe),"0/8");
     }
+    @Test
+    public void TestCase2(){
+        String druckerAusgabe = "abcdefghy";
+        Assertions.assertEquals(printerError(druckerAusgabe),"1/9");
+    }
 }
