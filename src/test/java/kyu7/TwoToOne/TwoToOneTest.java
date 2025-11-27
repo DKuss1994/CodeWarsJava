@@ -11,4 +11,11 @@ public class TwoToOneTest {
         String a = "abcdefghijklmnopqrstuvwxyz";
         Assertions.assertEquals(longest(a,a),a);
     }
+
+    @Test
+    public void TestCase2(){
+        String a = "ABC";
+        String b = "abc";
+        Assertions.assertEquals(longest(a,b),"abc");
+    }
 }
