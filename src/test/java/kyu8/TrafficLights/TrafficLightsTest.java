@@ -14,4 +14,8 @@ public class TrafficLightsTest {
     public void testCaseYellowToRed(){
         Assertions.assertEquals(updateLight("yellow"),"red");
     }
+    @Test
+    public void testCaseRedToGreen(){
+        Assertions.assertEquals(updateLight("red"),"green");
+    }
 }
