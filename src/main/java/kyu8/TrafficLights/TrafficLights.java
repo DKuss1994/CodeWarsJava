@@ -8,6 +8,9 @@ public class TrafficLights {
         }else if (current.equals("yellow")){
             return "red";
         }
+        else if (current.equals("red")){
+            return "green";
+        }
 
 
 
