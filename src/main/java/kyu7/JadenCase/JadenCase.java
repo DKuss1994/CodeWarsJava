@@ -5,9 +5,9 @@ import java.util.Locale;
 
 /*# Jaden Casing Strings (7 kyu)
 
-# https://www.codewars.com/kata/5390bac347d09b7da40006f6/java
+# https://www.codewars.com/kata/5390bac347d09b7da40006f6/train/java
         # Sprache: Java
-# Datum: 2025-11-21
+# Datum: 2025-12-05
 
         # Aufgabe:
         # Schreibe eine Funktion, die einen gesamten Satz so umwandelt,
@@ -74,11 +74,6 @@ public class JadenCase {
     }
       return new String(charArray);
 }
-
-
-
-
-
 }
 
 
