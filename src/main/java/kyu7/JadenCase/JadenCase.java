@@ -1,6 +1,5 @@
 package kyu7.JadenCase;
 
-import java.util.Arrays;
 import java.util.Locale;
 
 /*# Jaden Casing Strings (7 kyu)
@@ -26,9 +25,13 @@ import java.util.Locale;
         # Eingabe:  "How can mirrors be real if our eyes aren't real"
         # Ausgabe:  "How Can Mirrors Be Real If Our Eyes Aren't Real"
 
-# Ich habe gelernt, wie man Strings korrekt aufteilt,
-# wie man jedes Wort einzeln verändert
-# und wie man Sonderfälle wie null oder leere Eingaben sauber behandelt.
+# Ich habe gelernt wie man einen String sauber in einzelne Wörter zerlegt
+# wie man gezielt den ersten Buchstaben verändert
+# wie man den Rest eines Wortes übernimmt ohne ihn zu beschädigen
+# wie man mit StringBuilder effizient arbeitet
+# wie man mit substring und toUpperCase gezielt Teile eines Strings verarbeitet
+# wie man eine alternative Lösung mit einem char Array erstellt
+# wie man Sonderfälle wie null und leere Eingaben abfängt
 */
 
 
