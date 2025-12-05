@@ -20,7 +20,20 @@ public class JadenCaseTest {
     public void testCase(){
         String x = "How can mirrors be real if our eyes aren't real";
         String test = "How Can Mirrors Be Real If Our Eyes Aren't Real";
-        assertEquals(jadenCase.toJadenCase(x),test);
+        assertEquals(jadenCase.toJadenCase(x),test);}
+    @Test
+    public void testNullArg2() {
+        assertNull( jadenCase.toJadeCase2(null));
+    }
+    @Test
+    public void testEmptyArg2() {
+        assertNull(jadenCase.toJadeCase2(""));
+    }
+    @Test
+    public void testCase2(){
+        String x = "How can mirrors be real if our eyes aren't real";
+        String test = "How Can Mirrors Be Real If Our Eyes Aren't Real";
+        assertEquals(jadenCase.toJadeCase2(x),test);
     }
 
 }

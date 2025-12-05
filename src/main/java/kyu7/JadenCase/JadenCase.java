@@ -1,4 +1,6 @@
 package kyu7.JadenCase;
+
+import java.util.Arrays;
 import java.util.Locale;
 
 /*# Jaden Casing Strings (7 kyu)
@@ -32,7 +34,7 @@ import java.util.Locale;
 
 public class JadenCase {
     public String toJadenCase(String phrase) {
-        String[] jaden ;
+        String[] jaden;
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder = new StringBuilder();
         int count = 1;
@@ -45,18 +47,37 @@ public class JadenCase {
         } else {
             jaden = phrase.split(" ");
             for (String s : jaden) {
-                stringBuilder.append(s.substring(0,1).toUpperCase(Locale.ROOT));
+                stringBuilder.append(s.substring(0, 1).toUpperCase(Locale.ROOT));
                 stringBuilder.append(s.substring(1));
-                if(count < jaden.length){
+                if (count < jaden.length) {
                     stringBuilder.append(" ");
                     count++;
                 }
 
-                }
+            }
 
-            }
-           return String.valueOf(stringBuilder);
-            }
+        }
+        return String.valueOf(stringBuilder);
+    }
+
+    public String toJadeCase2(String phrase) {
+        if (phrase == null || phrase.isEmpty()) {
+            return null;
+        }
+        char[] charArray = phrase.toCharArray();
+        for (int i = 0; i < charArray.length; i++) {
+            if (i == 0 || charArray[i - 1] == ' '){
+                charArray[i] = Character.toUpperCase(charArray[i]);
+
+        }
+
+    }
+      return new String(charArray);
+}
+
+
+
+
 
 }
 
