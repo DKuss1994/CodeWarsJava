@@ -16,4 +16,9 @@ public class SquareTest {
        Assertions.assertFalse(isSquare(26));
 
    }
+   @Test
+    public void testcase3(){
+       Assertions.assertFalse(isSquare(-1));
+
+   }
 }
