@@ -6,15 +6,20 @@ import org.junit.jupiter.api.Test;
 import java.lang.reflect.Array;
 
 import static kyu8.Dinglemouse.Dinglemouse.humanYearsCatYearsDogYears;
+import static org.junit.Assert.assertArrayEquals;
 
 public class DinglemouseTest {
     @Test
-    public void testCase1(){
-        final int human = 1;
-        int cat = 15;
-        int dog = 15;
-        int [] testYears = {human,cat,dog};
+    public void one() {
+        assertArrayEquals(new int[]{1,15,15}, Dinglemouse.humanYearsCatYearsDogYears(1));
+    }
+    @Test
+    public void two() {
+        assertArrayEquals(new int[]{2,24,24}, Dinglemouse.humanYearsCatYearsDogYears(2));
+    }
 
-        Assertions.assertTrue(humanYearsCatYearsDogYears(1).equals(testYears));
+    @Test
+    public void ten() {
+        assertArrayEquals(new int[]{10,56,64}, Dinglemouse.humanYearsCatYearsDogYears(10));
     }
 }
