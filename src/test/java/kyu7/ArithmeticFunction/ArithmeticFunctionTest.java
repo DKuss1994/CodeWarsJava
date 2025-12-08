@@ -12,5 +12,11 @@ class ArithmeticFunctionTest {
         Assertions.assertEquals(arithmetic(20,78,"add"),98);
         Assertions.assertEquals(arithmetic(5,-5,"add"),0);
         Assertions.assertEquals(arithmetic(-10,5,"add"),-5);
+    }@Test
+    public void testCaseSubtract(){
+        Assertions.assertEquals(arithmetic(5,5,"subtract"),0);
+        Assertions.assertEquals(arithmetic(20,78,"subtract"),-58);
+        Assertions.assertEquals(arithmetic(5,-5,"subtract"),10);
+        Assertions.assertEquals(arithmetic(-10,5,"subtract"),-15);
     }
 }
