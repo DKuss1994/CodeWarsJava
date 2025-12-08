@@ -10,4 +10,8 @@ public class YesOrNoTest {
     public void yesTestCase(){
         Assertions.assertEquals(boolToWord(true),"yes");
     }
+    @Test
+    public void noTestCase(){
+        Assertions.assertEquals(boolToWord(false),"no");
+    }
 }
