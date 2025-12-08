@@ -1,11 +1,5 @@
 package kyu8.Dinglemouse;
-
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import java.lang.reflect.Array;
-
-import static kyu8.Dinglemouse.Dinglemouse.humanYearsCatYearsDogYears;
 import static org.junit.Assert.assertArrayEquals;
 
 public class DinglemouseTest {
