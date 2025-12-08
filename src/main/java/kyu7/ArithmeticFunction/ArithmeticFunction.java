@@ -7,6 +7,9 @@ package kyu7.ArithmeticFunction;
 //5, 2, "divide"   --> 2.5
 class ArithmeticFunction {
     public static int arithmetic(int a, int b, String operator) {
+        if(operator.equals("add")){
+            return a+b;
+        }
         return 5;
     }
 }
