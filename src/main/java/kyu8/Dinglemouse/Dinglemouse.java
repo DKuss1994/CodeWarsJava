@@ -1,4 +1,40 @@
 package kyu8.Dinglemouse;
+/*
+# Cat Years, Dog Years (8 kyu)
+
+# https://www.codewars.com/kata/5a6663e9fd56cb5ab800008b/train/java
+# Sprache: Java
+# Datum: 2025-12-08
+
+# Aufgabe:
+# Gegeben ist das Alter eines Menschen in Jahren.
+# Berechne daraus das Alter einer Katze und eines Hundes in Tierjahren nach folgendem Schema:
+
+# Katze:
+# 15 Jahre für das erste Menschenjahr
+# +9 Jahre für das zweite Menschenjahr
+# +4 Jahre für jedes weitere Jahr
+
+# Hund:
+# 15 Jahre für das erste Menschenjahr
+# +9 Jahre für das zweite Menschenjahr
+# +5 Jahre für jedes weitere Jahr
+
+# Rückgabe:
+# Ein Array mit [humanYears, catYears, dogYears]
+
+# Beispiel:
+# Eingabe: 1  -> Ausgabe: [1, 15, 15]
+# Eingabe: 2  -> Ausgabe: [2, 24, 24]
+# Eingabe: 10 -> Ausgabe: [10, 56, 64]
+
+# Ich habe gelernt wie man:
+# - Schleifen und Bedingungen kombiniert um unterschiedliche Zuwächse für die ersten zwei Jahre und alle weiteren Jahre zu berechnen
+# - alternative Lösungen mit switch/case erstellt
+# - Arrays zurückgibt, die mehrere Werte enthalten
+# - korrekte Berechnungen über mehrere Schritte hinweg überprüft
+*/
+
 
 public class Dinglemouse {
 
