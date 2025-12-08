@@ -8,10 +8,10 @@ import static kyu8.YesOrNo.YesOrNo.boolToWord;
 public class YesOrNoTest {
     @Test
     public void yesTestCase(){
-        Assertions.assertEquals(boolToWord(true),"yes");
+        Assertions.assertEquals(boolToWord(true),"Yes");
     }
     @Test
     public void noTestCase(){
-        Assertions.assertEquals(boolToWord(false),"no");
+        Assertions.assertEquals(boolToWord(false),"No");
     }
 }
