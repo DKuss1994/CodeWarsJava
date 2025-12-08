@@ -10,6 +10,9 @@ class ArithmeticFunction {
         if(operator.equals("add")){
             return a+b;
         }
+        else if(operator.equals("subtract")){
+            return a-b;
+        }
         return 5;
     }
 }
