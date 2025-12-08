@@ -18,5 +18,11 @@ class ArithmeticFunctionTest {
         Assertions.assertEquals(arithmetic(20,78,"subtract"),-58);
         Assertions.assertEquals(arithmetic(5,-5,"subtract"),10);
         Assertions.assertEquals(arithmetic(-10,5,"subtract"),-15);
+    }@Test
+    public void testCaseMultiply(){
+        Assertions.assertEquals(arithmetic(5,5,"multiply"),25);
+        Assertions.assertEquals(arithmetic(20,8,"multiply"),160);
+        Assertions.assertEquals(arithmetic(-5,-5,"multiply"),25);
+        Assertions.assertEquals(arithmetic(-10,5,"multiply"),-50);
     }
 }

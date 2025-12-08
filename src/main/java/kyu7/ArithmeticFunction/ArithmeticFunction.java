@@ -12,7 +12,10 @@ class ArithmeticFunction {
         }
         else if(operator.equals("subtract")){
             return a-b;
+        } else if (operator.equals("multiply")) {
+            return a*b;
+
         }
-        return 5;
+        return 0;
     }
 }
