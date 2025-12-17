@@ -7,7 +7,18 @@ public class KataTest {
     @Test
     void aTest(){
         char a = 'a';
-        Assertions.assertEquals("1",Kata.position(a));
+        Assertions.assertEquals("Position of alphabet: 1",Kata.position(a));}
+    @Test
+    void nTest(){
+        char n = 'n';
+
+        Assertions.assertEquals("Position of alphabet: 14",Kata.position(n));
+
+    }@Test
+    void sTest(){
+        char n = 's';
+
+        Assertions.assertEquals("Position of alphabet: 19",Kata.position(n));
 
     }
 
