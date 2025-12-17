@@ -7,6 +7,7 @@ public class KataTest {
     @Test
     void aTest(){
         char a = 'a';
+        Assertions.assertEquals("1",Kata.position(a));
 
     }
 
