@@ -1,9 +1,13 @@
 package kyu8.Kata;
 
-public class KataTest
-{
-    public static String position(char alphabet)
-    {
-        return "";
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
+public class KataTest {
+    @Test
+    void aTest(){
+        char a = 'a';
+
     }
+
 }
