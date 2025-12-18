@@ -38,4 +38,7 @@ public class Plural{
     public static boolean isPlural(float f){
         return f!=1;
     }
+    public static boolean isPluralLamba(float f){
+        return f!=1f ? true:false;
+    }
 }
