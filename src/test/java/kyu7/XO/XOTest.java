@@ -10,5 +10,10 @@ void trueTest(){
         String x = "xo";
         Assertions.assertTrue(XO.getXO(x));
     }
+    @Test
+void falseTest(){
+        String x = "xoo";
+        Assertions.assertFalse(XO.getXO(x));
+    }
 
 }
