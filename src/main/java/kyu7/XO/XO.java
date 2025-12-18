@@ -3,7 +3,8 @@ package kyu7.XO;
 # Exes and Ohs (7 kyu)
 
 # Sprache: Java
-# Datum: 2025-12-17
+# Datum: 2025-12-18
+https://www.codewars.com/kata/55908aad6620c066bc00002a/train/java
 
 # Aufgabe:
 # Es soll geprüft werden, ob ein String gleich viele Buchstaben x und o enthält.
