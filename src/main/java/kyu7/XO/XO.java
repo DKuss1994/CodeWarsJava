@@ -20,4 +20,8 @@ public class XO {
         return x - o == 0;
 
     }
+    public static  boolean getXOLength (String str) {
+        str = str.toLowerCase();
+        return str.replaceAll("x","").length()==str.replaceAll("o","").length();
+    }
 }
