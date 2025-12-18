@@ -3,7 +3,8 @@ package kyu8.Plural;
 # Plural (8 kyu)
 
 # Sprache: Java
-# Datum: 2025-12-17
+# Datum: 2025-12-18
+https://www.codewars.com/kata/52ceafd1f235ce81aa00073a/train/java
 
 # Aufgabe:
 # Es soll entschieden werden, ob für eine Zahl die Mehrzahl verwendet werden muss.
