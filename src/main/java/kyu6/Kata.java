@@ -1,4 +1,4 @@
-package kyu6.ArrayDiff;
+package kyu6;
 
 public class Kata {
 
