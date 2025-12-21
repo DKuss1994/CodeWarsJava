@@ -13,7 +13,15 @@ public class KataTest {
         int []a= {1,2,3};
         int []b ={2};
         int[]value = {1,3};
-        Assertions.assertArrayEquals(a, value);
+        Assertions.assertArrayEquals(Kata.arrayDiff(a,b), value);
+    }
+    @Test
+    void TestCase3(){
+
+        int []a= {1, 2, 2, 2, 3};
+        int []b ={2};
+        int[]value = {1,3};
+        Assertions.assertArrayEquals(Kata.arrayDiff(a,b), value);
     }
     @Test
     void TestCase(){
@@ -21,7 +29,31 @@ public class KataTest {
         int []a= {1,2,3};
         int []b ={};
         int[]value = {1,2,3};
-        Assertions.assertArrayEquals(a, value);
+        Assertions.assertArrayEquals(Kata.arrayDiff(a,b), value);
+    }
+    @Test
+    void TestCaseSteam1(){
+
+        int []a= {1,2,3};
+        int []b ={2};
+        int[]value = {1,3};
+        Assertions.assertArrayEquals(Kata.arrayDiffSteam(a,b), value);
+    }
+    @Test
+    void TestCaseSteam3(){
+
+        int []a= {1, 2, 2, 2, 3};
+        int []b ={2};
+        int[]value = {1,3};
+        Assertions.assertArrayEquals(Kata.arrayDiffSteam(a,b), value);
+    }
+    @Test
+    void TestCaseSteam(){
+
+        int []a= {1,2,3};
+        int []b ={};
+        int[]value = {1,2,3};
+        Assertions.assertArrayEquals(Kata.arrayDiffSteam(a,b), value);
     }
 
 
