@@ -1,4 +1,4 @@
-package kyu6;
+package kyu6.KataArrayDiff;
 
 import java.util.ArrayList;
 import java.util.stream.IntStream;

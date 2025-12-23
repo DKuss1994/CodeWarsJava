@@ -1,6 +1,6 @@
 package kyu6.ArrayDiff;
 
-import kyu6.Kata;
+import kyu6.KataArrayDiff.Kata;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
