@@ -18,9 +18,10 @@ public class Kata {
                 if (v == arr[i]) {
                     count++;
                 }
-                if (count == 1) {
-                    value = doubleArrayList.get(i);
-                }
+
+            }
+            if (count == 1) {
+                value = v;
             }
         }
         return value;

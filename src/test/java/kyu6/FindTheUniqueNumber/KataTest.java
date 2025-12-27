@@ -9,4 +9,8 @@ public class KataTest {
     public void TestCase(){
         Assertions.assertEquals(1.0, Kata.findUniq(new double[]{0, 1, 0}));
     }
+    @Test
+    public void TestCase2(){
+        Assertions.assertEquals(2.0,Kata.findUniq(new double[]{1, 1, 1, 2, 1, 1}));
+    }
 }
