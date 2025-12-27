@@ -1,11 +1,9 @@
 package kyu6.FindTheUniqueNumber;
 
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.stream.Collectors;
+
 
 public class Kata {
     public static double findUniq(double arr[]) {
@@ -19,5 +17,10 @@ public class Kata {
             }
         }
 return 0.0;
+    }
+    public static double findUniqLama(double arr[]){
+
+
+        return 0.0;
     }
 }

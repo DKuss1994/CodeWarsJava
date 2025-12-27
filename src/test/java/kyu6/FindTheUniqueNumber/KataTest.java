@@ -13,4 +13,12 @@ public class KataTest {
     public void TestCase2(){
         Assertions.assertEquals(2.0,Kata.findUniq(new double[]{1, 1, 1, 2, 1, 1}));
     }
+    @Test
+    public void TestCaseLamba(){
+        Assertions.assertEquals(1.0, Kata.findUniqLama(new double[]{0, 1, 0}));
+    }
+    @Test
+    public void TestCaseLamba2(){
+        Assertions.assertEquals(2.0,Kata.findUniqLama(new double[]{1, 1, 1, 2, 1, 1}));
+    }
 }
