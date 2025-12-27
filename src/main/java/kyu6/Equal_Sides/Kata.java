@@ -46,8 +46,6 @@ public class Kata {
 
         for (int i = index; i < arr.length; i++) {
             sumRight+= arr[i];
-
-
         }
         for (int i = index; i >= 0; i--) {
             sumLeft += arr[i];
