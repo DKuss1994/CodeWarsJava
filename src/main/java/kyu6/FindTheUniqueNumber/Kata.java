@@ -4,6 +4,15 @@ package kyu6.FindTheUniqueNumber;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+import java.util.Arrays;
+import java.util.Map.Entry;
+import static java.util.function.Function.identity;
+import static java.util.stream.Collectors.counting;
+import static java.util.stream.Collectors.groupingBy;
+
+import static java.util.stream.Collectors.groupingBy;
 
 
 public class Kata {
@@ -19,8 +28,14 @@ public class Kata {
         }
 return 0.0;
     }
-    public static double findUniqLama(double arr[]){
+    public static double findUniqLamba(double arr[]){
         Arrays.sort(arr);
         return arr[0] == arr[1]?arr[arr.length-1]:arr[0];
     }
+    public static double findUniqStream(double arr[]){
+        return Arrays.stream(arr).boxed().collect(groupingBy(identity(),counting())).entrySet()
+                .stream().filter(e->e.getValue()==1).findFirst()
+                .map(Entry::getKey).orElse(0.0);
+    }
+
 }

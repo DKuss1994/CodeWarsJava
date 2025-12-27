@@ -15,10 +15,18 @@ public class KataTest {
     }
     @Test
     public void TestCaseLamba(){
-        Assertions.assertEquals(1.0, Kata.findUniqLama(new double[]{0, 1, 0}));
+        Assertions.assertEquals(1.0, Kata.findUniqLamba(new double[]{0, 1, 0}));
     }
     @Test
     public void TestCaseLamba2(){
-        Assertions.assertEquals(2.0,Kata.findUniqLama(new double[]{1, 1, 1, 2, 1, 1}));
+        Assertions.assertEquals(2.0,Kata.findUniqLamba(new double[]{1, 1, 1, 2, 1, 1}));
+    }
+    @Test
+    public void TestCaseStream(){
+        Assertions.assertEquals(1.0, Kata.findUniqStream(new double[]{0, 1, 0}));
+    }
+    @Test
+    public void TestCaseStream2(){
+        Assertions.assertEquals(2.0,Kata.findUniqStream(new double[]{1, 1, 1, 2, 1, 1}));
     }
 }
