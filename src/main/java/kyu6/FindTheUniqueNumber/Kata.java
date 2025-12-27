@@ -1,6 +1,7 @@
 package kyu6.FindTheUniqueNumber;
 
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -19,8 +20,7 @@ public class Kata {
 return 0.0;
     }
     public static double findUniqLama(double arr[]){
-
-
-        return 0.0;
+        Arrays.sort(arr);
+        return arr[0] == arr[1]?arr[arr.length-1]:arr[0];
     }
 }
