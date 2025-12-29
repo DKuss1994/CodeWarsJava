@@ -2,7 +2,7 @@ package kyu8.MixedSum;
 
 import java.util.List;
 
-public class MixedSum {
+public class MixedSumTest {
 
     /*
      * Assume input will be only of Integer o String type
