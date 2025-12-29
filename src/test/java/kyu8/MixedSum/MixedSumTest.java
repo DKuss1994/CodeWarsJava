@@ -1,13 +1,14 @@
 package kyu8.MixedSum;
 
+import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+
+import java.util.Arrays;
 import java.util.List;
 
 public class MixedSumTest {
-
-    /*
-     * Assume input will be only of Integer o String type
-     */
-    public int sum(List<?> mixed) {
-        return -1;
-    }
+@Test
+public void testCase1(){
+    Assertions.assertEquals(10,MixedSum.sum(Arrays.asList(5,"5")));
+}
 }

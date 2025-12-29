@@ -7,7 +7,7 @@ public class MixedSum {
     /*
      * Assume input will be only of Integer o String type
      */
-    public int sum(List<?> mixed) {
+    public static int sum(List<?> mixed) {
         return -1;
     }
 }
