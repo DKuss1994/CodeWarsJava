@@ -60,29 +60,47 @@ public class ProgressTracker {
                                     int total,
                                     int weeklyDone) throws IOException {
 
-        StringBuilder sb = new StringBuilder();
+        Path readmePath = Path.of("README.md");
+        String content = Files.exists(readmePath)
+                ? Files.readString(readmePath)
+                : "";
 
-        sb.append("# Codewars Java Fortschritt\n\n");
-        sb.append("## Wöchentlicher Fortschritt\n");
-        sb.append("Gelöste Katas diese Woche: ").append(weeklyDone).append("\n");
-        sb.append("Wochenziel: 3 Katas\n");
+        StringBuilder progressBlock = new StringBuilder();
 
-        if (weeklyDone >= WEEKLY_GOAL) {
-            sb.append("Status: Ziel erreicht 🎉\n\n");
+        progressBlock.append("<!-- PROGRESS_START -->\n");
+        progressBlock.append("## Codewars Fortschritt\n\n");
+
+        progressBlock.append("### Wöchentlicher Fortschritt\n");
+        progressBlock.append("Gelöste Katas diese Woche: ").append(weeklyDone).append("\n");
+        progressBlock.append("Wochenziel: 3 Katas\n");
+
+        if (weeklyDone >= 3) {
+            progressBlock.append("Status: Ziel erreicht 🎉\n\n");
         } else {
-            sb.append("Status: Noch ").append(WEEKLY_GOAL - weeklyDone)
+            progressBlock.append("Status: Noch ").append(3 - weeklyDone)
                     .append(" bis zum Ziel\n\n");
         }
 
-        sb.append("## Gesamtübersicht\n");
+        progressBlock.append("### Gesamtübersicht\n");
 
         new TreeMap<>(progress).forEach((kyu, count) ->
-                sb.append(kyu.replace("kyu", "")).append(" kyu: ")
+                progressBlock.append(kyu.replace("kyu", "")).append(" kyu: ")
                         .append(count).append(" gelöst\n")
         );
 
-        sb.append("\nGesamt gelöst: ").append(total).append("\n");
+        progressBlock.append("\nGesamt gelöst: ").append(total).append("\n");
+        progressBlock.append("<!-- PROGRESS_END -->");
 
-        Files.write(Path.of("README.md"), sb.toString().getBytes());
+        if (content.contains("<!-- PROGRESS_START -->")) {
+            content = content.replaceAll(
+                    "<!-- PROGRESS_START -->[\\s\\S]*?<!-- PROGRESS_END -->",
+                    progressBlock.toString()
+            );
+        } else {
+            content += "\n\n" + progressBlock;
+        }
+
+        Files.writeString(readmePath, content);
     }
+
 }
