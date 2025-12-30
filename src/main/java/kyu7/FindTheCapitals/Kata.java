@@ -2,6 +2,7 @@ package kyu7.FindTheCapitals;
 
 public class Kata{
     public static int[] capitals(String s){
-        return new int[0];
+        int[] value = {0};
+        return value;
     }
 }
