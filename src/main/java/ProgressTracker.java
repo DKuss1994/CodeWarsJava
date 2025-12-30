@@ -71,21 +71,28 @@ public class ProgressTracker {
         progressBlock.append("## Codewars Fortschritt\n\n");
 
         progressBlock.append("### Wöchentlicher Fortschritt\n");
+        progressBlock.append("\n");
         progressBlock.append("Gelöste Katas diese Woche: ").append(weeklyDone).append("\n");
+        progressBlock.append("\n");
         progressBlock.append("Wochenziel: 3 Katas\n");
+        progressBlock.append("\n");
 
         if (weeklyDone >= 3) {
             progressBlock.append("Status: Ziel erreicht 🎉\n\n");
+            progressBlock.append("\n");
         } else {
             progressBlock.append("Status: Noch ").append(3 - weeklyDone)
                     .append(" bis zum Ziel\n\n");
+            progressBlock.append("\n");
         }
 
         progressBlock.append("### Gesamtübersicht\n");
+        progressBlock.append("\n");
 
         new TreeMap<>(progress).forEach((kyu, count) ->
                 progressBlock.append(kyu.replace("kyu", "")).append(" kyu: ")
-                        .append(count).append(" gelöst\n")
+                        .append(count).append(" gelöst\n").append("\n")
+
         );
 
         progressBlock.append("\nGesamt gelöst: ").append(total).append("\n");
