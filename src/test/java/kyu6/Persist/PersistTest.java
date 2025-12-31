@@ -5,7 +5,11 @@ import org.junit.jupiter.api.Test;
 
 class PersistTest {
    @Test
-    void testOneDigit(){
+    void testZeroDigit(){
        Assertions.assertEquals(0,Persist.persistence(4));
+   }
+   @Test
+    void testOneDigit(){
+       Assertions.assertEquals(1,Persist.persistence(12));
    }
 }
