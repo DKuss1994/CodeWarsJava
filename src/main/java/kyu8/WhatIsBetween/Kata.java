@@ -25,7 +25,7 @@ import java.util.stream.IntStream;
 # - wie man Schleifen benutzt, um Zahlen zwischen zwei Grenzen zu sammeln
 # - wie man Ausnahmen wirft, wenn die Eingabe ungültig ist
 # - wie man ArrayLists in Arrays umwandelt
-# - wie man Java Streams (IntStream.rangeClosed) für solche Aufgaben einsetzen kann
+# - wie man Java Streams (IntStream.rangeClosed) für solche Aufgaben einsetzen
 */
 
 public class Kata {
