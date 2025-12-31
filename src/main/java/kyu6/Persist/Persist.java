@@ -36,22 +36,22 @@ package kyu6.Persist;
 class Persist {
     public static int persistence(long n) {
         int count = 0;
-        final char TONUMBER = '0';
+        final char TO_NUMBER = '0';
         String valueString = String.valueOf(n);
         while (valueString.length() != 1) {
             int value = 1;
             char[] valueCharArray = valueString.toCharArray();
-            valueString = multiplicativeTheValue(valueCharArray, value, TONUMBER);
+            valueString = multiplicativeTheValue(valueCharArray, value, TO_NUMBER);
             count++;
         }
 
         return count;
     }
 
-    private static String multiplicativeTheValue(char[] valueCharArray, int value, char TONUMBER) {
+    private static String multiplicativeTheValue(char[] valueCharArray, int value, char TO_NUMBER) {
         String valueString;
         for (char c : valueCharArray) {
-            value *= (c - TONUMBER);
+            value *= (c - TO_NUMBER);
         }
         valueString = String.valueOf(value);
         return valueString;
