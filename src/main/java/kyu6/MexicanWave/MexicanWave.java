@@ -66,6 +66,9 @@ public class MexicanWave {
         return list.toArray(new String[0]);
 
     }
+    public static String[] waveStream(String str){
+
+    }
 
 
 
