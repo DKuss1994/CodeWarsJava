@@ -56,6 +56,10 @@ public class MexicanWave {
 
         return wave;
     }
+    public static String[] waveSubstring(String str){
+
+    }
+
 
 
 }
