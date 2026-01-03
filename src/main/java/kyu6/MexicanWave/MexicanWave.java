@@ -1,5 +1,7 @@
 package kyu6.MexicanWave;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 
 public class MexicanWave {
@@ -16,10 +18,7 @@ public class MexicanWave {
             if(Character.isLetter(buchstabe)){
                 waveLength++;
             }
-
         }
-
-        System.out.println(waveLength);
         String[] wave = new String[waveLength];
         char[] charArray = str.toCharArray();
         //Wieviele Waves erstellt werden müssen
@@ -57,6 +56,14 @@ public class MexicanWave {
         return wave;
     }
     public static String[] waveSubstring(String str){
+        List<String> list = new ArrayList<>();
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            if(ch == ' ')continue;
+
+            list.add(str.substring(0,i)+Character.toUpperCase(ch)+str.substring(i+1) );
+        }
+        return list.toArray(new String[0]);
 
     }
 

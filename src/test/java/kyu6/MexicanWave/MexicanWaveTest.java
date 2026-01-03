@@ -18,7 +18,22 @@ public class MexicanWaveTest {
     @Test
     void testCase3(){
         String[]text = {"Two words", "tWo words", "twO words", "two Words", "two wOrds", "two woRds", "two worDs", "two wordS"};
-        Assertions.assertArrayEquals(text,MexicanWave.wave("two words"));
+        Assertions.assertArrayEquals(text,MexicanWave.waveStream("two words"));
+    }
+    @Test
+    void testCaseStream1(){
+        String[]text = {"Hello", "hEllo", "heLlo", "helLo", "hellO"};
+        Assertions.assertArrayEquals(text,MexicanWave.waveStream("hello"));
+    }
+    @Test
+    void testCaseStream2(){
+        String[]text = {" S p a c e s ", " s P a c e s ", " s p A c e s ", " s p a C e s ", " s p a c E s ", " s p a c e S "};
+        Assertions.assertArrayEquals(text,MexicanWave.wave(" s p a c e s "));
+    }
+    @Test
+    void testCaseStream3(){
+        String[]text = {"Two words", "tWo words", "twO words", "two Words", "two wOrds", "two woRds", "two worDs", "two wordS"};
+        Assertions.assertArrayEquals(text,MexicanWave.waveStream("two words"));
     }
     @Test
     void testCaseSubstring1(){
