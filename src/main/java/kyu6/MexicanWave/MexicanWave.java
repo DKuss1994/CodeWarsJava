@@ -4,6 +4,42 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 import java.util.stream.IntStream;
+/*# Mexican Wave (6 kyu)
+
+# https://www.codewars.com/kata/58f5c63f1e26ecda7e000029
+# Sprache: Java
+# Datum: 02.01.2026
+
+# Aufgabe:
+# Erstelle eine Funktion, die aus einem String eine La Ola Welle erzeugt.
+# Jeder Großbuchstabe stellt eine aufstehende Person dar.
+# Pro Durchlauf darf genau ein Buchstabe großgeschrieben werden.
+#
+# Regeln:
+# Der String enthält nur Kleinbuchstaben und Leerzeichen
+# Leerzeichen werden übersprungen und erzeugen keine Welle
+# Ist der String leer, wird ein leeres Array zurückgegeben
+#
+# Beispiel:
+# "hello"
+# Ergebnis:
+# ["Hello", "hEllo", "heLlo", "helLo", "hellO"]
+#
+# " s p a c e s "
+# Ergebnis:
+# [" S p a c e s ", " s P a c e s ", " s p A c e s ", " s p a C e s ", " s p a c E s ", " s p a c e S "]
+#
+# Lösungsansätze:
+# 1. Klassische Lösung mit Char Array und StringBuilder
+# 2. Lösung mit substring für bessere Lesbarkeit
+# 3. Lösung mit Streams für funktionalen Ansatz
+#
+# Ich habe gelernt:
+# wie man Zeichen gezielt überspringt
+# wie substring effizient eingesetzt wird
+# wie Streams lesbaren Code erzeugen können
+# wie man mehrere Lösungswege sauber testet
+*/
 
 public class MexicanWave {
 
