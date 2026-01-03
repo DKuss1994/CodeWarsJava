@@ -3,11 +3,11 @@
 
 ### Wöchentlicher Fortschritt
 
-Gelöste Katas diese Woche: 2
+Gelöste Katas diese Woche: 0
 
 Wochenziel: 3 Katas
 
-Status: Noch 1 bis zum Ziel
+Status: Noch 3 bis zum Ziel
 
 
 ### Gesamtübersicht
@@ -16,10 +16,10 @@ Status: Noch 1 bis zum Ziel
 
 7 kyu: 11 gelöst
 
-8 kyu: 11 gelöst
+8 kyu: 12 gelöst
 
 
-Gesamt gelöst: 27
+Gesamt gelöst: 28
 <!-- PROGRESS_END -->
 ## Codewars Java Übungsprojekt
 Überblick
