@@ -10,6 +10,6 @@ public class WelcomeTest {
     }
     @Test
     void testCaseWrong(){
-        Assertions.assertEquals("Welcome",Welcome.greet("basas"));
+        Assertions.assertEquals("Welcome",Welcome.greet("basas2"));
     }
 }
