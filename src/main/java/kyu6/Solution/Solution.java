@@ -1,6 +1,7 @@
 package kyu6.Solution;
 
 
+import java.util.Arrays;
 import java.util.PriorityQueue;
 
 public class Solution{
@@ -17,4 +18,14 @@ public class Solution{
         }
         return kassen.stream().max(Integer::compareTo).get();
     }
+    public static int solveSuperMarketQueueSort (int[] customers, int n){
+        int[] kasse = new int[n];
+        for (int i = 0; i < customers.length; i++) {
+            kasse[0] += customers[i];
+            Arrays.sort(kasse);
+        }
+        return kasse[n-1];
+
+    }
+
 }
