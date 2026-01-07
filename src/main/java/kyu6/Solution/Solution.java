@@ -1,8 +1,20 @@
 package kyu6.Solution;
 
-public class Solution {
 
-    public static int solveSuperMarketQueue(int[] customers, int n) {
-        return 0;
+import java.util.PriorityQueue;
+
+public class Solution{
+
+    public static int solveSuperMarketQueue (int[] customers, int n) {
+        PriorityQueue<Integer> kassen = new PriorityQueue<>();
+        for (int i = 0; i < n; i++) {
+            kassen.add(0);
+        }
+        for (int customer : customers) {
+            int frei = kassen.poll();
+            frei += customer;
+            kassen.add(frei);
+        }
+        return kassen.stream().max(Integer::compareTo).get();
     }
 }
