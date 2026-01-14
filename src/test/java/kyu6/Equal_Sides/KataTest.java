@@ -1,8 +1,9 @@
 package kyu6.Equal_Sides;
 
 
-import org.junit.Test;
+
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class KataTest {
     @Test
