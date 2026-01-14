@@ -9,4 +9,9 @@ public class MultiplesTest {
         int[]x = {2,4,6};
         Assertions.assertArrayEquals(x,Multiples.find(2,6));
     }
+    @Test
+    void testCase2(){
+        int[]x = {2,4,6};
+        Assertions.assertArrayEquals(x,Multiples.findStream(2,6));
+    }
 }
