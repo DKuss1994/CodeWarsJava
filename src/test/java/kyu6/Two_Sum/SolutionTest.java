@@ -16,5 +16,17 @@ public class SolutionTest {
         int[]value = {1,2};
         Assertions.assertArrayEquals(value,Solution.twoSum(x,6));
     }
+    @Test
+    void Test2Case(){
+        int[]x ={1,2,3};
+        int[]value = {0,2};
+        Assertions.assertArrayEquals(value,Solution.twoSum2(x,4));
+    }
+    @Test
+    void Test2Case2(){
+        int[]x ={3,2,4};
+        int[]value = {1,2};
+        Assertions.assertArrayEquals(value,Solution.twoSum2(x,6));
+    }
 
 }
