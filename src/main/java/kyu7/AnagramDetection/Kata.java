@@ -1,5 +1,6 @@
 package kyu7.AnagramDetection;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -35,7 +36,15 @@ public class Kata {
     }
 
     public static boolean isAnagramSort(String s, String s1) {
+        if (s == null||s1==null||s.length()!=s1.length()) {
+            return false;
+        }
+        char[]sChar=s.toLowerCase().toCharArray();
+        char[]s1Char=s1.toLowerCase().toCharArray();
+        Arrays.sort(sChar);
+        Arrays.sort(s1Char);
+        return Arrays.equals(sChar,s1Char);
 
-        return false;
+
     }
 }
