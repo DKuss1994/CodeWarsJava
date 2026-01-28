@@ -2,7 +2,10 @@ package kyu7.AnagramDetection;
 
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Kata {
     public static boolean isAnagram(String a, String b) {
@@ -49,7 +52,8 @@ public class Kata {
     }
 
     public static boolean isAnagramStream(String s, String s1) {
-
-        return false;
+        return Stream.of(s.toLowerCase().split("")).sorted()
+                .collect(Collectors.joining()).equals(Stream.of(s1.toLowerCase().split(""))
+                        .sorted().collect(Collectors.joining()));
     }
 }
