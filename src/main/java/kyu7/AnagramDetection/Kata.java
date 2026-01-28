@@ -47,4 +47,9 @@ public class Kata {
 
 
     }
+
+    public static boolean isAnagramStream(String s, String s1) {
+
+        return false;
+    }
 }

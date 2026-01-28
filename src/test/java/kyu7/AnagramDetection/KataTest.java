@@ -19,5 +19,12 @@ public class KataTest {
     @Test
     void testSortFalse(){
         Assertions.assertFalse(Kata.isAnagramSort("abc","def"));
+    } @Test
+    void testStreamTrue(){
+        Assertions.assertTrue(Kata.isAnagramStream("foefet","toffee"));
+    }
+    @Test
+    void testStreamFalse(){
+        Assertions.assertFalse(Kata.isAnagramStream("abc","def"));
     }
 }
