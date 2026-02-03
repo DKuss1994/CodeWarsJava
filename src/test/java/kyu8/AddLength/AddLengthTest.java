@@ -14,4 +14,14 @@ public class AddLengthTest {
         String[] test = {"0"};
         Assertions.assertArrayEquals(test,AddLength.addLength(""));
     }
+    @Test
+    void testCaseStream1(){
+        String[] test = {"ban 3"};
+        Assertions.assertArrayEquals(test,AddLength.addLengthStream("ban"));
+    }
+    @Test
+    void testCaseStream2(){
+        String[] test = {"0"};
+        Assertions.assertArrayEquals(test,AddLength.addLengthStream(""));
+    }
 }

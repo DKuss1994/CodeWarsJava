@@ -1,5 +1,8 @@
 package kyu8.AddLength;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class AddLength{
 
     public static String[] addLength(String str){
@@ -23,4 +26,11 @@ public class AddLength{
         return null;
     }
 
+    public static String[] addLengthStream(String ban) {
+        if(ban.isEmpty()){
+            return new String[]{"0"};
+        }
+        return Arrays.stream(ban.split(" ")).map(w ->w +" "+w.length()).toArray(String[]::new);
+
+    }
 }
