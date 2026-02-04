@@ -3,8 +3,6 @@ package kyu8.HelpAlex;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
-
 public class HelpAlexTest {
     @Test
     public void testHoopCount(){

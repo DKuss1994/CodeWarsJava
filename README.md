@@ -16,10 +16,10 @@ Status: Ziel erreicht 🎉
 
 7 kyu: 15 gelöst
 
-8 kyu: 18 gelöst
+8 kyu: 21 gelöst
 
 
-Gesamt gelöst: 43
+Gesamt gelöst: 46
 <!-- PROGRESS_END -->
 ## Codewars Java Übungsprojekt
 Überblick
