@@ -12,14 +12,14 @@ Status: Ziel erreicht 🎉
 
 ### Gesamtübersicht
 
-6 kyu: 12 gelöst
+6 kyu: 13 gelöst
 
-7 kyu: 15 gelöst
+7 kyu: 16 gelöst
 
-8 kyu: 23 gelöst
+8 kyu: 24 gelöst
 
 
-Gesamt gelöst: 50
+Gesamt gelöst: 53
 <!-- PROGRESS_END -->
 ## Codewars Java Übungsprojekt
 Überblick
