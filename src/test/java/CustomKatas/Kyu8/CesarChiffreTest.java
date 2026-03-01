@@ -5,17 +5,23 @@ import org.junit.jupiter.api.Test;
 
 public class CesarChiffreTest {
     @Test
-    void test1(){
+    void firstMethodeEqualSecondeMethode(){
+        int salt = 1;
+        String code = "Ifmmp";
+        Assertions.assertEquals(        CesarChiffre.mathDecryption(code,salt),CesarChiffre.decryption(code,salt));
+    }
+    @Test
+    void testIfmmpToHelloSaltOne(){
         Assertions.assertEquals("Hello",CesarChiffre.decryption("Ifmmp",1));
 
     }
     @Test
-    void testBig1(){
+    void testIFMMPBigtoHELLOSaltOne(){
         Assertions.assertEquals("HELLO",CesarChiffre.decryption("IFMMP",1));
 
     }
     @Test
-    void test2(){
+    void testZToAIfGoDown(){
         Assertions.assertEquals("Z",CesarChiffre.decryption("A",1));
 
     }

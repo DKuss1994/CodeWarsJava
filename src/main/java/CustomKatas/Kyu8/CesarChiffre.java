@@ -70,6 +70,23 @@ public class CesarChiffre {
 
         }
     }
+    public static String mathDecryption(String code, int salt){
+        StringBuilder result = new StringBuilder();
+
+        for (char c : code.toCharArray()) {
+            if (Character.isUpperCase(c)) {
+                result.append((char) ('A' + (c - 'A' - salt % 26 + 26) % 26));
+            } else if (Character.isLowerCase(c)) {
+                result.append((char) ('a' + (c - 'a' - salt % 26 + 26) % 26));
+            } else if (c == ' ') {
+                result.append(' ');
+            }
+        }
+
+        return result.toString();
+
+    }
+
 
 }
 
